@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.SocialPlatforms.Impl;
 
 public class StageManager : MonoBehaviour
 {
@@ -10,6 +9,7 @@ public class StageManager : MonoBehaviour
     private GameObject log;
     public GameObject logPrefab;
     public Vector3 logPos;
+    public Transform logTrans;
 
 
     private void Awake()
@@ -35,29 +35,32 @@ public class StageManager : MonoBehaviour
     {
         if (!log)
         {
-            log = Instantiate(logPrefab);
-            log.transform.position = logPos;
+            log = Instantiate(logPrefab, logTrans);
+            //log.transform.position = logPos;
         }
-        knifeController.Setup((6 + GameManager.Instance.stage));
-    }
 
+        Invoke("LogInstantiateDelay", 0.15f);
+    }
+    private void LogInstantiateDelay()
+    {
+        knifeController.Setup((6 + GameManager.Instance.playerScore.Stage));
+        log.GetComponent<Log>().SetKnivesSprite(knifeController.CurrKnifeSprite);
+    }
 
     public void CleanStage()
     {
         // Reset Knives
         knifeController.ResetKnivesPool();
 
-        // Destroy Log
-        Destroy(log);
     }
 
     public void NextStage()
     {
-        GameManager.Instance.stage++;
-        UIManager.Instance.gamePlayStageText.text = "Stage "+GameManager.Instance.stage.ToString();
+        GameManager.Instance.UpdateStage();
 
-        //CleanStage();
+        CleanStage();
+        log.GetComponent<Log>().Explode();
 
-        SetupStage();
+        Invoke("SetupStage", 1f);
     }
 }

@@ -13,7 +13,7 @@ public class KnifeController : MonoBehaviour
     public GameObject[] availableKnivesUI;
     public Color usedKnifeColor;
     public int currKnifeIndex = -1;
-
+    public Sprite CurrKnifeSprite { get; private set; }
 
     private void Start()
     {
@@ -45,6 +45,7 @@ public class KnifeController : MonoBehaviour
     }
     public void ChangeKnife(Sprite knifeSprite)
     {
+        CurrKnifeSprite = knifeSprite;
         foreach (GameObject knife in knivesPool)
         {
             knife.GetComponent<SpriteRenderer>().sprite = knifeSprite;
@@ -54,8 +55,8 @@ public class KnifeController : MonoBehaviour
     {
         foreach (GameObject knife in knivesPool)
         {
-            knife.transform.SetParent(this.transform);
-            knife.transform.position = transform.position;
+            knife.transform.SetParent(knivesPoolPos);
+            knife.transform.position = knivesPoolPos.position;
             knife.transform.rotation = Quaternion.identity;
 
             knife.SetActive(false);
@@ -64,7 +65,7 @@ public class KnifeController : MonoBehaviour
     public void Setup(int availableKnivesCount = 7)
     {
         availableKnivesCount = (availableKnivesCount > 20) ? 7 : availableKnivesCount;
-        
+
         // Reset the Knives Pool
         ResetKnivesPool();
 
@@ -90,7 +91,7 @@ public class KnifeController : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
         {
             if (knife != null)
             {
@@ -107,12 +108,13 @@ public class KnifeController : MonoBehaviour
         {
             knife = knivesPool[currKnifeIndex];
             knife.transform.position = transform.position;
+            knife.transform.SetParent(transform);
             knife.SetActive(true);
         }
         else
         {
             // Stage Completed
-            Invoke("KnivesEnd", 0.2f);
+            StageManager.Instance.NextStage();
         }
     }
 
@@ -125,9 +127,5 @@ public class KnifeController : MonoBehaviour
         // Set Used Knife UI
         availableKnivesUI[currKnifeIndex].GetComponent<Image>().color = usedKnifeColor;
         currKnifeIndex--;
-    }
-    public void KnivesEnd()
-    {
-        StageManager.Instance.NextStage();
     }
 }

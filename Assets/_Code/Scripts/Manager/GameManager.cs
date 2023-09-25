@@ -10,12 +10,11 @@ public class GameManager : MonoBehaviour
     public delegate void GameOverEvent();
     public GameOverEvent OnGameOverEvent;
 
-    public int stage = 1;
-    public int score;
-
+    public Score playerScore;
 
     private void Awake()
     {
+        Application.targetFrameRate = 120;
         if (Instance != null && Instance != this)
         {
             Destroy(this.gameObject);
@@ -30,8 +29,7 @@ public class GameManager : MonoBehaviour
         // Resume the Time
         Time.timeScale = 1f;
 
-        stage= 1;
-        score= 0;
+        playerScore = new Score(1, 0);
         
         OnGameStartEvent?.Invoke();
     }
@@ -45,7 +43,14 @@ public class GameManager : MonoBehaviour
 
     public void UpdateScore()
     {
-        score++;
-        UIManager.Instance.gamePlayScoreText.text = score.ToString();
+        playerScore.Points++;
+
+        UIManager.Instance.UpdateGamePlayStats();
+    }
+    public void UpdateStage()
+    {
+        playerScore.Stage++;
+
+        UIManager.Instance.UpdateGamePlayStats();
     }
 }

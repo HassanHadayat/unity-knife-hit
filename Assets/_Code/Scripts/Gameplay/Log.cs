@@ -4,9 +4,18 @@ using UnityEngine;
 public class Log : MonoBehaviour
 {
     public SpriteRenderer spriteRenderer;
+    public Animator animController;
+    public SpriteRenderer[] knivesSpriteRenderers;
 
-    public float rotateSpeed;
-    public float rotateTimer;
+    private float rotateSpeed;
+    private float rotateTimer;
+
+    public float minRotateTimer;
+    public float maxRotateTimer;
+
+    public float minRotateSpeed;
+    public float maxRotateSpeed;
+
 
     public Vector3 stationaryPos;
     public Vector3 hitPos;
@@ -14,9 +23,13 @@ public class Log : MonoBehaviour
     public Color stationaryColor;
     public Color hitColor;
 
+    private bool isRotating = true;
 
     private void Start()
     {
+        if (animController)
+            animController.Play("InstantiateAnim");
+
         SetRotation();
     }
 
@@ -25,17 +38,33 @@ public class Log : MonoBehaviour
         // Set Rotation Timer
         rotateTimer = Random.Range(1f, 10f);
         // Set Rotation Speed
-        rotateSpeed = Random.Range(50f, 150f);
+        rotateSpeed = Random.Range(100f, 250f);
+
         // Set Direction
         rotateSpeed = (Random.Range(0, 2) % 2 == 0) ? rotateSpeed : -rotateSpeed;
     }
 
     void Update()
     {
-        if (rotateTimer <= 0f)
+
+        if (!isRotating) { return; }
+
+        if (rotateTimer <= 0.75f)
+        {
+            if (rotateSpeed > 0)
+            {
+                rotateSpeed -= rotateSpeed * Time.deltaTime;
+
+            }
+            else if (rotateSpeed < 0)
+            {
+                rotateSpeed -= rotateSpeed * Time.deltaTime;
+            }
+        }
+
+        if (rotateTimer <= 0f && Mathf.Abs(rotateSpeed) <= 40f)
         {
             SetRotation();
-            //GetComponent<Rigidbody>().
         }
         else
         {
@@ -46,7 +75,7 @@ public class Log : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        
+
         if (collision.collider.CompareTag("Knife"))
         {
             transform.position = hitPos;
@@ -54,9 +83,32 @@ public class Log : MonoBehaviour
             Invoke("ResetPosition", 0.1f);
         }
     }
+    public void SetRootMotion()
+    {
+        animController.applyRootMotion = true;
+    }
+    public void SetKnivesSprite(Sprite sprite)
+    {
+        foreach (var spriteRenderer in knivesSpriteRenderers)
+        {
+            spriteRenderer.sprite = sprite;
+        }
+    }
     public void ResetPosition()
     {
         transform.position = stationaryPos;
         spriteRenderer.color = stationaryColor;
     }
+
+    public void Explode()
+    {
+        isRotating = false;
+        transform.rotation = Quaternion.identity;
+        animController.Play("ExplodeAnim");
+    }
+    public void DestroyLog()
+    {
+        Destroy(gameObject);
+    }
+
 }

@@ -8,7 +8,7 @@ public class Knife : MonoBehaviour
     public KnifeController knifeController;
     public PolygonCollider2D col;
     public Rigidbody2D rb;
-
+    public ParticleSystem paritcles;
 
     private void Awake()
     {
@@ -38,6 +38,8 @@ public class Knife : MonoBehaviour
         if (collision.collider.CompareTag("Log"))
         {
             isMoving = false;
+            // Play wood poping particles
+            paritcles.Play();
 
             // Making Knife static
             rb.bodyType = RigidbodyType2D.Static;
