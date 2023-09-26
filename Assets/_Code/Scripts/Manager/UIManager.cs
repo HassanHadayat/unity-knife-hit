@@ -98,4 +98,13 @@ public class UIManager : MonoBehaviour
     {
         GameManager.Instance.StartGame();
     }
+    public void OnClick_HomeBtn()
+    {
+        // Destroy Log
+        StageManager.Instance.DestroyLog();
+
+        gameStartPanel.SetActive(true);
+        gamePlayPanel.SetActive(false);
+        gameOverPanel.SetActive(false);
+    }
 }

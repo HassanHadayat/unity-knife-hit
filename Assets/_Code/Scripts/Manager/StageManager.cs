@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class StageManager : MonoBehaviour
@@ -62,5 +63,10 @@ public class StageManager : MonoBehaviour
         log.GetComponent<Log>().Explode();
 
         Invoke("SetupStage", 1f);
+    }
+    public void DestroyLog()
+    {
+        if (log)
+            Destroy(log);
     }
 }
