@@ -37,15 +37,9 @@ public class PlayerData : MonoBehaviour
     }
     private void Start()
     {
-        GameManager.Instance.OnGameOverEvent += UpdatePlayerStats;
-
         UIManager.Instance.UpdateGameStartStats(HighestScore.Stage, HighestScore.Points);
     }
 
-    public void UpdatePlayerStats()
-    {
-        HighestScore = GameManager.Instance.playerScore;
-    }
 }
 
 public struct Score

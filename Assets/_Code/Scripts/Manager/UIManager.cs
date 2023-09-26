@@ -101,6 +101,8 @@ public class UIManager : MonoBehaviour
     public void OnClick_HomeBtn()
     {
         // Destroy Log
+        UpdateGameStartStats(PlayerData.Instance.HighestScore.Stage, PlayerData.Instance.HighestScore.Points);
+
         StageManager.Instance.DestroyLog();
 
         gameStartPanel.SetActive(true);

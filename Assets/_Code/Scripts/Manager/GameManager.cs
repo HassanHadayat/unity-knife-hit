@@ -37,6 +37,8 @@ public class GameManager : MonoBehaviour
     {
         // Pause the Time
         Time.timeScale = 0f;
+        PlayerData.Instance.HighestScore = playerScore;
+
 
         OnGameOverEvent?.Invoke();
     }
