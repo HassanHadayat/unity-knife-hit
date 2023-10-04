@@ -35,7 +35,7 @@ public class Knife : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.collider.CompareTag("Log"))
+        if (collision.collider.CompareTag("Log") && isMoving)
         {
             isMoving = false;
             // Play wood poping particles
@@ -45,7 +45,7 @@ public class Knife : MonoBehaviour
             rb.bodyType = RigidbodyType2D.Static;
 
             // Make Knife Child of Log
-            transform.position += Vector3.up * Random.Range(0f,0.2f);
+            //transform.position += Vector3.up * Random.Range(0f,0.2f);
             transform.SetParent(collision.transform, true);
 
             // Update Player Score
@@ -58,6 +58,8 @@ public class Knife : MonoBehaviour
         {
             Debug.Log("Knife Collided With Knife!");
             
+            isMoving = false;
+
             // Remove All Forces
             rb.velocity = Vector3.zero;
 

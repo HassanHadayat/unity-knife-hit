@@ -582,6 +582,7 @@ MonoBehaviour:
   - {fileID: 2106150295625650032}
   - {fileID: 1267776935996211894}
   - {fileID: 1929046479093027521}
+  crackedLog: {fileID: 3179472402661604537, guid: 37f16a7c0089b3e4783337f898565f61, type: 3}
   minRotateTimer: 1
   maxRotateTimer: 10
   minRotateSpeed: 100

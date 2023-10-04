@@ -7,6 +7,8 @@ public class Log : MonoBehaviour
     public Animator animController;
     public SpriteRenderer[] knivesSpriteRenderers;
 
+    public GameObject crackedLog;
+
     private float rotateSpeed;
     private float rotateTimer;
 
@@ -102,9 +104,15 @@ public class Log : MonoBehaviour
 
     public void Explode()
     {
+        animController.enabled = false;
         isRotating = false;
         transform.rotation = Quaternion.identity;
-        animController.Play("ExplodeAnim");
+        spriteRenderer.enabled = false;
+        Debug.Log("SP Status => " + spriteRenderer.enabled);
+        Instantiate(crackedLog, this.transform);
+
+        Invoke("DestroyLog", 1.8f);
+        //animController.Play("ExplodeAnim");
     }
     public void DestroyLog()
     {

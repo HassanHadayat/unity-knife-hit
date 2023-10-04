@@ -40,12 +40,12 @@ public class StageManager : MonoBehaviour
             //log.transform.position = logPos;
         }
 
-        Invoke("LogInstantiateDelay", 0.15f);
+        log.GetComponent<Log>().SetKnivesSprite(knifeController.CurrKnifeSprite);
+        Invoke("LogInstantiateDelay", 0.3f);
     }
     private void LogInstantiateDelay()
     {
         knifeController.Setup((6 + GameManager.Instance.playerScore.Stage));
-        log.GetComponent<Log>().SetKnivesSprite(knifeController.CurrKnifeSprite);
     }
 
     public void CleanStage()
@@ -62,7 +62,7 @@ public class StageManager : MonoBehaviour
         CleanStage();
         log.GetComponent<Log>().Explode();
 
-        Invoke("SetupStage", 1f);
+        Invoke("SetupStage", 2.1f);
     }
     public void DestroyLog()
     {
