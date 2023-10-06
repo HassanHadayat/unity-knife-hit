@@ -19,6 +19,10 @@ public struct CrackedLogForce
         Vector2 force = randDir.normalized * randMag;
         rb.AddForce(force, ForceMode2D.Impulse);
 
+        // Enable gravity and increase it by setting the gravity scale
+
+        //Physics.gravity *= 50f;
+        rb.gravityScale *= 4;
     }
     public void ApplyTorque(float minTorque, float maxTorque)
     {
