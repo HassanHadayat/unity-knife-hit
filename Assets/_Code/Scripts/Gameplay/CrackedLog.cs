@@ -41,18 +41,22 @@ public class CrackedLog : MonoBehaviour
     public CrackedLogForce[] pieces;
     public CrackedLogForce[] knives;
 
-    private void Start()
+
+    public void Explode(Sprite knifeSprite)
     {
+        foreach (var knife in knives)
+        {
+            // Set Knives Sprite
+            knife.rb.GetComponent<SpriteRenderer>().sprite = knifeSprite;
+
+            // Apply Force and Torque
+            knife.ApplyForce(2, 3);
+            knife.ApplyTorque(min_torque, max_torque);
+        }
+
         foreach (var piece in pieces)
         {
             piece.ApplyForce(min_force, max_force);
         }
-
-        foreach (var knife in knives)
-        {
-            knife.ApplyForce(2, 3);
-            knife.ApplyTorque(min_torque, max_torque);
-        }
     }
-
 }

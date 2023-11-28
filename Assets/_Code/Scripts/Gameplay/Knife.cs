@@ -3,7 +3,7 @@ using UnityEngine;
 public class Knife : MonoBehaviour
 {
     public float moveSpeed;
-    private bool isMoving = false;
+    protected bool isMoving = false;
 
     public KnifeController knifeController;
     public PolygonCollider2D col;
@@ -33,7 +33,7 @@ public class Knife : MonoBehaviour
         rb.AddForce(Vector3.up * moveSpeed, ForceMode2D.Impulse);
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    public virtual void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.collider.CompareTag("Log") && isMoving)
         {
@@ -75,12 +75,12 @@ public class Knife : MonoBehaviour
         }
     }
 
-    private void DelayGameOver()
+    public virtual void DelayGameOver()
     {
         // Make Knife Kinematic to stop falling
         rb.bodyType = RigidbodyType2D.Kinematic;
 
-        // Invoke the Game Over Event
+        //Invoke the Game Over Event
         GameManager.Instance.GameOver();
     }
 }

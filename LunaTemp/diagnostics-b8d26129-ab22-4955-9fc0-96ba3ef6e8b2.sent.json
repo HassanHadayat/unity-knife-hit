@@ -1,0 +1,137 @@
+{
+  "BuildID": "b8d26129-ab22-4955-9fc0-96ba3ef6e8b2",
+  "Command": "project:deploy",
+  "ProjectID": "353d04de79307d94ca0c31f115ab9948",
+  "ProjectStateHash": "1447224d0a77f0f68afc5e5e7c94aaee448589f6a7bf60f72dc540e7766b0b6f",
+  "StageCompletedAt": 3,
+  "EarliestFatalError": 0,
+  "StartTime": 1701094337389,
+  "EndTime": 1701094356858,
+  "PlaygroundUserID": 12625,
+  "OperatingSystem": "win32",
+  "UnityPackageID": null,
+  "TargetPlatform": "playground",
+  "UnityVersion": "2021.3.15f1",
+  "LunaVersion": "5.3.0",
+  "LogCount": 5,
+  "Logs": [
+    {
+      "LogID": "ce9da987-89e8-46dd-8343-5e9e3f82d089",
+      "Order": 4,
+      "Timestamp": 1701094357026,
+      "Stage": 3,
+      "ErrorType": 0,
+      "ErrorCode": "LP3014",
+      "Description": "You are using the wrong API: Application.OpenURL.",
+      "Details": [
+        "You are using the wrong API: Application.OpenURL. which can lead to ad networks rejecting the playable. Please use Luna.Unity.Playable.InstallFullGame() instead. "
+      ],
+      "DescriptionValues": [
+        "Application.OpenURL"
+      ],
+      "DetailsValues": [
+        "Application.OpenURL"
+      ],
+      "LogCount": 1,
+      "LinePosition": 159,
+      "FilePath": "C:\\Unity Projects\\unity-knife-hit\\Assets\\_Code\\Scripts\\PlayableAd\\PlayableAdManager.cs",
+      "ClassName": "",
+      "MemberName": "",
+      "Severity": 0
+    },
+    {
+      "LogID": "fa93a044-5cbd-42e6-9dbf-083209c0145f",
+      "Order": 4,
+      "Timestamp": 1701094357030,
+      "Stage": 3,
+      "ErrorType": 3,
+      "ErrorCode": "LP3008",
+      "Description": "You are only using: 1 custom events.",
+      "Details": [
+        "You are only using 1 custom events. It is recommended to use more custom events to have a better understanding of the playable."
+      ],
+      "DescriptionValues": [
+        "1"
+      ],
+      "DetailsValues": [
+        "1"
+      ],
+      "LogCount": 1,
+      "LinePosition": null,
+      "FilePath": "",
+      "ClassName": "",
+      "MemberName": "",
+      "Severity": 0
+    },
+    {
+      "LogID": "c435c5de-b231-49bb-abf2-9a1d2146bc85",
+      "Order": 0,
+      "Timestamp": 1701094338773,
+      "Stage": 1,
+      "ErrorType": 0,
+      "ErrorCode": "LP1012",
+      "Description": "Export Error: An item with the same key has already been added. Key: TextMeshPro/Mobile/Distance Field (UnityEngine.Shader)",
+      "Details": [
+        "TextMeshPro/Mobile/Distance Field",
+        ""
+      ],
+      "DescriptionValues": [
+        "An item with the same key has already been added. Key: TextMeshPro/Mobile/Distance Field (UnityEngine.Shader)"
+      ],
+      "DetailsValues": [],
+      "LogCount": 1,
+      "LinePosition": 0,
+      "FilePath": "Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader",
+      "ClassName": "",
+      "MemberName": "",
+      "Severity": 0
+    },
+    {
+      "LogID": "cf98cff6-e654-4f60-8dc9-c514ced807f5",
+      "Order": 1,
+      "Timestamp": 1701094338855,
+      "Stage": 1,
+      "ErrorType": 0,
+      "ErrorCode": "LP1030",
+      "Description": "TMP Font Asset uses unsupported 'Atlas Population Mode'",
+      "Details": [
+        "TMP Font Asset '{0}' uses Atlas Population Mode '{1}' which is not supported"
+      ],
+      "DescriptionValues": [],
+      "DetailsValues": [
+        "LiberationSans SDF - Fallback",
+        "Dynamic"
+      ],
+      "LogCount": 1,
+      "LinePosition": 0,
+      "FilePath": "",
+      "ClassName": "",
+      "MemberName": "",
+      "Severity": 0
+    },
+    {
+      "LogID": "5ab913a8-8e3e-4f75-ac3e-0296c150290a",
+      "Order": 2,
+      "Timestamp": 1701094340310,
+      "Stage": 1,
+      "ErrorType": 0,
+      "ErrorCode": "LP1032",
+      "Description": "Package(s) is not supported in Luna",
+      "Details": [
+        "Currently package(s) com.unity.timeline are not supported in Luna. We recommend you to remove it and workaround it's functionality."
+      ],
+      "DescriptionValues": [
+        "com.unity.timeline (1.6.4)"
+      ],
+      "DetailsValues": [
+        "com.unity.timeline"
+      ],
+      "LogCount": 1,
+      "LinePosition": 0,
+      "FilePath": "C:/Unity Projects/unity-knife-hit/Packages\\manifest.json",
+      "ClassName": "",
+      "MemberName": "",
+      "Severity": 0
+    }
+  ]
+}

@@ -1,0 +1,200 @@
+Authorized using stored user info.
+stderr: 'rm' is not recognized as an internal or external command,
+operable program or batch file.
+
+Exporting assets from Unity......
+
+[ Stage1 ] Assets exported from Unity and staged for further processing
+Using C:/Unity Projects/unity-knife-hit/Assets/_Art/Fonts/Amatic_SC/AmaticSC-Bold.ttf file to generate an atlas for AmaticSC-Bold[24790] font
+  Using alphabet  §1234567890-=qwertyuiop[]asdfghjkl;'\`zxcvbnm,./±!@#$%^&*()_+QWERTYUIOP{}ASDFGHJKL:"|~ZXCVBNM<>?
+Using C:/Unity Projects/unity-knife-hit/Assets/TextMesh Pro/Fonts/LiberationSans.ttf file to generate an atlas for LiberationSans[26658] font
+  Using alphabet  §1234567890-=qwertyuiop[]asdfghjkl;'\`zxcvbnm,./±!@#$%^&*()_+QWERTYUIOP{}ASDFGHJKL:"|~ZXCVBNM<>?
+Combined 97 glyphs into bitmap texture at C:/Unity Projects/unity-knife-hit/LunaTemp/stage1/tmp/fonts/LiberationSans-26658/output_0.png (56kb)
+Combined 97 glyphs into bitmap texture at C:/Unity Projects/unity-knife-hit/LunaTemp/stage1/tmp/fonts/AmaticSC-Bold-24790/output_0.png (57kb)
+Found custom rules for texture Assets/_Art/Fonts/Amatic_SC/AmaticSC-Bold SDF_Shadow.asset
+  {"maxWidth":1024,"maxHeight":1024,"format":"png32","compression":"none","quality":65,"script":"","ext":"","name":"Assets/_Art/Fonts/Amatic_SC/AmaticSC-Bold SDF_Shadow.asset","isOverride":true}
+Found custom rules for texture Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset
+  {"maxWidth":1024,"maxHeight":1024,"format":"png32","compression":"none","quality":65,"script":"","ext":"","name":"Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset","isOverride":true}
+Found custom rules for texture Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset
+  {"maxWidth":1024,"maxHeight":1024,"format":"png32","compression":"none","quality":65,"script":"","ext":"","name":"Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset","isOverride":true}
+Resources:
+{}
+[ Stage2 ] Assets postprocessed and bundled successfully
+Authorized using stored user info.
+MSBuild version 17.7.2+d6990bcfa for .NET Framework
+
+Build started 11/27/2023 7:12:28 PM.
+
+
+
+Project "C:\Users\Play Spare\Downloads\5.3.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj" on node 1 (Rebuild target(s)).
+
+CoreClean:
+  Deleting file "C:\Users\Play Spare\Downloads\5.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\UnityScriptsCompiler.dll".
+
+  Deleting file "C:\Users\Play Spare\Downloads\5.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\UnityScriptsCompiler.pdb".
+
+  Deleting file "C:\Users\Play Spare\Downloads\5.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.dll".
+
+  Deleting file "C:\Users\Play Spare\Downloads\5.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.Html5.dll".
+
+  Deleting file "C:\Users\Play Spare\Downloads\5.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.WebGL.dll".
+
+  Deleting file "C:\Users\Play Spare\Downloads\5.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\DOTween.dll".
+
+  Deleting file "C:\Users\Play Spare\Downloads\5.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\JetBrains.dll".
+
+  Deleting file "C:\Users\Play Spare\Downloads\5.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Newtonsoft.Json.dll".
+
+  Deleting file "C:\Users\Play Spare\Downloads\5.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.Core.dll".
+
+  Deleting file "C:\Users\Play Spare\Downloads\5.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.dom.dll".
+
+  Deleting file "C:\Users\Play Spare\Downloads\5.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.es5.dll".
+
+  Deleting file "C:\Users\Play Spare\Downloads\5.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.scripthost.dll".
+
+  Deleting file "C:\Users\Play Spare\Downloads\5.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\TextMeshPro.dll".
+
+  Deleting file "C:\Users\Play Spare\Downloads\5.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\UnityEngine.dll".
+
+  Deleting file "C:\Users\Play Spare\Downloads\5.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\UnityEngine.UI.dll".
+
+  Deleting file "C:\Users\Play Spare\Downloads\5.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\UnityEngine.UniversalRenderPipeline.dll".
+
+  Deleting file "C:\Users\Play Spare\Downloads\5.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.xml".
+
+  Deleting file "C:\Users\Play Spare\Downloads\5.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.Html5.xml".
+
+  Deleting file "C:\Users\Play Spare\Downloads\5.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.WebGL.xml".
+
+  Deleting file "C:\Users\Play Spare\Downloads\5.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Newtonsoft.Json.xml".
+
+  Deleting file "C:\Users\Play Spare\Downloads\5.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.Core.xml".
+
+  Deleting file "C:\Users\Play Spare\Downloads\5.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.dom.xml".
+
+  Deleting file "C:\Users\Play Spare\Downloads\5.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.es5.xml".
+
+  Deleting file "C:\Users\Play Spare\Downloads\5.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.scripthost.xml".
+
+  Deleting file "C:\Users\Play Spare\Downloads\5.3.0\pipeline\templates\LunaCompiler\Scripts\obj\Debug\Scripts.csproj.AssemblyReference.cache".
+
+  Deleting file "C:\Users\Play Spare\Downloads\5.3.0\pipeline\templates\LunaCompiler\Scripts\obj\Debug\Scripts.csproj.CoreCompileInputs.cache".
+
+  Deleting file "C:\Users\Play Spare\Downloads\5.3.0\pipeline\templates\LunaCompiler\Scripts\obj\Debug\Scripts.csproj.CopyComplete".
+
+  Deleting file "C:\Users\Play Spare\Downloads\5.3.0\pipeline\templates\LunaCompiler\Scripts\obj\Debug\UnityScriptsCompiler.dll".
+
+  Deleting file "C:\Users\Play Spare\Downloads\5.3.0\pipeline\templates\LunaCompiler\Scripts\obj\Debug\UnityScriptsCompiler.pdb".
+
+GenerateTargetFrameworkMonikerAttribute:
+Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output files are up-to-date with respect to the input files.
+
+CoreCompile:
+  C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\Roslyn\csc.exe /noconfig /nowarn:CS0626,1701,1702 /fullpaths /nostdlib+ /errorreport:prompt /warn:4 /define:UNITY_LUNA;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_2021;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_2021_1_OR_NEWER;UNITY_2021_2_OR_NEWER;UNITY_2021_3_OR_NEWER;UNITY_2021_3;UNITY_2021_3_15 /highentropyva+ /reference:"C:\Users\Play Spare\Downloads\5.3.0\pipeline\templates\LunaCompiler\packages\Bridge.Core.17.9.38-luna\lib\net40\Bridge.dll" /reference:"C:\Users\Play Spare\Downloads\5.3.0\pipeline\templates\LunaCompiler\packages\Bridge.Html5.17.9.0\lib\net40\Bridge.Html5.dll" /reference:"C:\Users\Play Spare\Downloads\5.3.0\pipeline\templates\LunaCompiler\packages\Bridge.WebGL.1.22.0\lib\net40\Bridge.WebGL.dll" /reference:"C:\Users\Play Spare\Downloads\5.3.0\pipeline\templates\LunaCompiler\packages\DOTween.1.2.705\lib\net40\DOTween.dll" /reference:"C:\Users\Play Spare\Downloads\5.3.0\pipeline\templates\LunaCompiler\packages\com.unity.ide.rider\3.0.0\JetBrains.dll" /reference:"C:\Users\Play Spare\Downloads\5.3.0\pipeline\templates\LunaCompiler\packages\Bridge.Newtonsoft.Json.1.16.0\lib\net40\Newtonsoft.Json.dll" /reference:"C:\Users\Play Spare\Downloads\5.3.0\pipeline\templates\LunaCompiler\packages\Retyped.Core.1.6.6733\lib\net40\Retyped.Core.dll" /reference:"C:\Users\Play Spare\Downloads\5.3.0\pipeline\templates\LunaCompiler\packages\Re
+typed.dom.2.8.6733\lib\net40\Retyped.dom.dll" /reference:"C:\Users\Play Spare\Downloads\5.3.0\pipeline\templates\LunaCompiler\packages\Retyped.es5.2.8.6733\lib\net40\Retyped.es5.dll" /reference:"C:\Users\Play Spare\Downloads\5.3.0\pipeline\templates\LunaCompiler\packages\Retyped.scripthost.2.8.6733\lib\net40\Retyped.scripthost.dll" /reference:"C:\Users\Play Spare\Downloads\5.3.0\pipeline\templates\LunaCompiler\packages\com.unity.textmeshpro\3.0.6\TextMeshPro.dll" /reference:"C:\Users\Play Spare\Downloads\5.3.0\pipeline\templates\LunaCompiler\Scripts\Vendor\UnityEngine.dll" /reference:"C:\Users\Play Spare\Downloads\5.3.0\pipeline\templates\LunaCompiler\packages\com.unity.ui\1.2.1\UnityEngine.UI.dll" /reference:"C:\Users\Play Spare\Downloads\5.3.0\pipeline\templates\LunaCompiler\packages\com.unity.urp\7.6\UnityEngine.UniversalRenderPipeline.dll" /debug+ /debug:full /optimize- /out:obj\Debug\UnityScriptsCompiler.dll /subsystemversion:6.00 /target:library /warnaserror- /utf8output /langversion:7.2 "C:\Unity Projects\unity-knife-hit\Assets\_Code\Scripts\Controller\KnifeController.cs" "C:\Unity Projects\unity-knife-hit\Assets\_Code\Scripts\Gameplay\CrackedLog.cs" "C:\Unity Projects\unity-knife-hit\Assets\_Code\Scripts\Gameplay\Knife.cs" "C:\Unity Projects\unity-knife-hit\Assets\_Code\Scripts\Gameplay\Log.cs" "C:\Unity Projects\unity-knife-hit\Assets\_Code\Scripts\PlayableAd\PlayableAdKnife.cs" "C:\Unity Projects\unity-knife-hit\Assets\_Code\Scripts\PlayableAd\PlayableAdManager.cs" Properties/AssemblyInfo.cs Sources/OtherDummyScript.cs "obj\Debug\.NETFramework,Version=v4.7.AssemblyAttributes.cs"
+
+C:\Unity Projects\unity-knife-hit\Assets\_Code\Scripts\PlayableAd\PlayableAdManager.cs(15,36): warning CS0649: Field 'PlayableAdManager.gameEndPanelImg' is never assigned to, and will always have its default value null [C:\Users\Play Spare\Downloads\5.3.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+C:\Unity Projects\unity-knife-hit\Assets\_Code\Scripts\PlayableAd\PlayableAdManager.cs(16,37): warning CS0649: Field 'PlayableAdManager.installBtn' is never assigned to, and will always have its default value null [C:\Users\Play Spare\Downloads\5.3.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+C:\Unity Projects\unity-knife-hit\Assets\_Code\Scripts\PlayableAd\PlayableAdManager.cs(18,46): warning CS0649: Field 'PlayableAdManager.gameNameTMP' is never assigned to, and will always have its default value null [C:\Users\Play Spare\Downloads\5.3.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+C:\Unity Projects\unity-knife-hit\Assets\_Code\Scripts\PlayableAd\PlayableAdManager.cs(30,41): warning CS0169: The field 'PlayableAdManager.gamePlayPanel' is never used [C:\Users\Play Spare\Downloads\5.3.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+C:\Unity Projects\unity-knife-hit\Assets\_Code\Scripts\PlayableAd\PlayableAdManager.cs(31,41): warning CS0649: Field 'PlayableAdManager.gameEndPanel' is never assigned to, and will always have its default value null [C:\Users\Play Spare\Downloads\5.3.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+C:\Unity Projects\unity-knife-hit\Assets\_Code\Scripts\PlayableAd\PlayableAdManager.cs(17,46): warning CS0649: Field 'PlayableAdManager.installBtnTMP' is never assigned to, and will always have its default value null [C:\Users\Play Spare\Downloads\5.3.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+  CompilerServer: server - server processed compilation - d3f41445-31af-42c4-9442-4a79a1150310
+
+_CopyFilesMarkedCopyLocal:
+  Copying file from "C:\Users\Play Spare\Downloads\5.3.0\pipeline\templates\LunaCompiler\packages\Bridge.Core.17.9.38-luna\lib\net40\Bridge.dll" to "C:\Users\Play Spare\Downloads\5.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.dll".
+
+  Copying file from "C:\Users\Play Spare\Downloads\5.3.0\pipeline\templates\LunaCompiler\packages\com.unity.ide.rider\3.0.0\JetBrains.dll" to "C:\Users\Play Spare\Downloads\5.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\JetBrains.dll".
+
+  Copying file from "C:\Users\Play Spare\Downloads\5.3.0\pipeline\templates\LunaCompiler\packages\DOTween.1.2.705\lib\net40\DOTween.dll" to "C:\Users\Play Spare\Downloads\5.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\DOTween.dll".
+
+  Copying file from "C:\Users\Play Spare\Downloads\5.3.0\pipeline\templates\LunaCompiler\packages\Bridge.Newtonsoft.Json.1.16.0\lib\net40\Newtonsoft.Json.dll" to "C:\Users\Play Spare\Downloads\5.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Newtonsoft.Json.dll".
+
+  Copying file from "C:\Users\Play Spare\Downloads\5.3.0\pipeline\templates\LunaCompiler\packages\Bridge.Html5.17.9.0\lib\net40\Bridge.Html5.dll" to "C:\Users\Play Spare\Downloads\5.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.Html5.dll".
+  Copying file from "C:\Users\Play Spare\Downloads\5.3.0\pipeline\templates\LunaCompiler\packages\Bridge.WebGL.1.22.0\lib\net40\Bridge.WebGL.dll" to "C:\Users\Play Spare\Downloads\5.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.WebGL.dll".
+
+  Copying file from "C:\Users\Play Spare\Downloads\5.3.0\pipeline\templates\LunaCompiler\packages\Retyped.Core.1.6.6733\lib\net40\Retyped.Core.dll" to "C:\Users\Play Spare\Downloads\5.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.Core.dll".
+
+  Copying file from "C:\Users\Play Spare\Downloads\5.3.0\pipeline\templates\LunaCompiler\packages\Retyped.dom.2.8.6733\lib\net40\Retyped.dom.dll" to "C:\Users\Play Spare\Downloads\5.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.dom.dll".
+
+  Copying file from "C:\Users\Play Spare\Downloads\5.3.0\pipeline\templates\LunaCompiler\packages\Retyped.es5.2.8.6733\lib\net40\Retyped.es5.dll" to "C:\Users\Play Spare\Downloads\5.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.es5.dll".
+
+  Copying file from "C:\Users\Play Spare\Downloads\5.3.0\pipeline\templates\LunaCompiler\packages\Retyped.scripthost.2.8.6733\lib\net40\Retyped.scripthost.dll" to "C:\Users\Play Spare\Downloads\5.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retype
+d.scripthost.dll".
+  Copying file from "C:\Users\Play Spare\Downloads\5.3.0\pipeline\templates\LunaCompiler\packages\com.unity.textmeshpro\3.0.6\TextMeshPro.dll" to "C:\Users\Play Spare\Downloads\5.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\TextMeshPro.dll".
+
+  Copying file from "C:\Users\Play Spare\Downloads\5.3.0\pipeline\templates\LunaCompiler\Scripts\Vendor\UnityEngine.dll" to "C:\Users\Play Spare\Downloads\5.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\UnityEngine.dll".
+
+  Copying file from "C:\Users\Play Spare\Downloads\5.3.0\pipeline\templates\LunaCompiler\packages\com.unity.urp\7.6\UnityEngine.UniversalRenderPipeline.dll" to "C:\Users\Play Spare\Downloads\5.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\UnityEngine.UniversalRenderPipeline.dll".
+
+  Copying file from "C:\Users\Play Spare\Downloads\5.3.0\pipeline\templates\LunaCompiler\packages\com.unity.ui\1.2.1\UnityEngine.UI.dll" to "C:\Users\Play Spare\Downloads\5.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\UnityEngine.UI.dll".
+
+  Copying file from "C:\Users\Play Spare\Downloads\5.3.0\pipeline\templates\LunaCompiler\packages\Bridge.Core.17.9.38-luna\lib\net40\Bridge.xml" to "C:\Users\Play Spare\Downloads\5.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.xml".
+
+  Copying file from "C:\Users\Play Spare\Downloads\5.3.0\pipeline\templates\LunaCompiler\packages\Bridge.WebGL.1.22.0\lib\net40\Bridge.WebGL.xml" to "C:\Users\Play Spare\Downloads\5.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.WebGL.xml".
+
+  Copying file from "C:\Users\Play Spare\Downloads\5.3.0\pipeline\templates\LunaCompiler\packages\Bridge.Html5.17.9.0\lib\net40\Bridge.Html5.xml" to "C:\Users\Play Spare\Downloads\5.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Bridge.Html5.xml".
+
+  Copying file from "C:\Users\Play Spare\Downloads\5.3.0\pipeline\templates\LunaCompiler\packages\Bridge.Newtonsoft.Json.1.16.0\lib\net40\Newtonsoft.Json.xml" to "C:\Users\Play Spare\Downloads\5.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Newtonsoft.Json.xml".
+
+  Copying file from "C:\Users\Play Spare\Downloads\5.3.0\pipeline\templates\LunaCompiler\packages\Retyped.Core.1.6.6733\lib\net40\Retyped.Core.xml" to "C:\Users\Play Spare\Downloads\5.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.Core.xml".
+
+  Copying file from "C:\Users\Play Spare\Downloads\5.3.0\pipeline\templates\LunaCompiler\packages\Retyped.dom.2.8.6733\lib\net40\Retyped.dom.xml" to "C:\Users\Play Spare\Downloads\5.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.dom.xml".
+
+  Copying file from "C:\Users\Play Spare\Downloads\5.3.0\pipeline\templates\LunaCompiler\packages\Retyped.es5.2.8.6733\lib\net40\Retyped.es5.xml" to "C:\Users\Play Spare\Downloads\5.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.es5.xml".
+
+  Copying file from "C:\Users\Play Spare\Downloads\5.3.0\pipeline\templates\LunaCompiler\packages\Retyped.scripthost.2.8.6733\lib\net40\Retyped.scripthost.xml" to "C:\Users\Play Spare\Downloads\5.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\Retyped.scripthost.xml".
+
+  Creating "C:\Users\Play Spare\Downloads\5.3.0\pipeline\templates\LunaCompiler\Scripts\obj\Debug\Scripts.csproj.CopyComplete" because "AlwaysCreate" was specified.
+
+  Touching "C:\Users\Play Spare\Downloads\5.3.0\pipeline\templates\LunaCompiler\Scripts\obj\Debug\Scripts.csproj.CopyComplete".
+
+CopyFilesToOutputDirectory:
+  Copying file from "C:\Users\Play Spare\Downloads\5.3.0\pipeline\templates\LunaCompiler\Scripts\obj\Debug\UnityScriptsCompiler.dll" to "C:\Users\Play Spare\Downloads\5.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\UnityScriptsCompiler.dll".
+
+  Scripts -> C:\Users\Play Spare\Downloads\5.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\UnityScriptsCompiler.dll
+
+  Copying file from "C:\Users\Play Spare\Downloads\5.3.0\pipeline\templates\LunaCompiler\Scripts\obj\Debug\UnityScriptsCompiler.pdb" to "C:\Users\Play Spare\Downloads\5.3.0\pipeline\templates\LunaCompiler\Scripts\bin\Debug\UnityScriptsCompiler.pdb".
+
+BridgeNetCompilerTask:
+  Bridge started
+
+      To enable detailed logging, configure "logging" in bridge.json.
+      https://github.com/bridgedotnet/Bridge/wiki/global-configuration#logging
+
+  Bridge done
+
+Done Building Project "C:\Users\Play Spare\Downloads\5.3.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj" (Rebuild target(s)).
+
+
+Build succeeded.
+
+
+
+"C:\Users\Play Spare\Downloads\5.3.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj" (Rebuild target) (1) ->
+(CoreCompile target) -> 
+  C:\Unity Projects\unity-knife-hit\Assets\_Code\Scripts\PlayableAd\PlayableAdManager.cs(15,36): warning CS0649: Field 'PlayableAdManager.gameEndPanelImg' is never assigned to, and will always have its default value null [C:\Users\Play Spare\Downloads\5.3.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  C:\Unity Projects\unity-knife-hit\Assets\_Code\Scripts\PlayableAd\PlayableAdManager.cs(16,37): warning CS0649: Field 'PlayableAdManager.installBtn' is never assigned to, and will always have its default value null [C:\Users\Play Spare\Downloads\5.3.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  C:\Unity Projects\unity-knife-hit\Assets\_Code\Scripts\PlayableAd\PlayableAdManager.cs(18,46): warning CS0649: Field 'PlayableAdManager.gameNameTMP' is never assigned to, and will always have its default value null [C:\Users\Play Spare\Downloads\5.3.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  C:\Unity Projects\unity-knife-hit\Assets\_Code\Scripts\PlayableAd\PlayableAdManager.cs(30,41): warning CS0169: The field 'PlayableAdManager.gamePlayPanel' is never used [C:\Users\Play Spare\Downloads\5.3.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  C:\Unity Projects\unity-knife-hit\Assets\_Code\Scripts\PlayableAd\PlayableAdManager.cs(31,41): warning CS0649: Field 'PlayableAdManager.gameEndPanel' is never assigned to, and will always have its default value null [C:\Users\Play Spare\Downloads\5.3.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+  C:\Unity Projects\unity-knife-hit\Assets\_Code\Scripts\PlayableAd\PlayableAdManager.cs(17,46): warning CS0649: Field 'PlayableAdManager.installBtnTMP' is never assigned to, and will always have its default value null [C:\Users\Play Spare\Downloads\5.3.0\pipeline\templates\LunaCompiler\Scripts\Scripts.csproj]
+
+    6 Warning(s)
+    0 Error(s)
+
+
+Time Elapsed 00:00:06.22
+
+Source code compiled successfully!
+Diagnostics gathered successfully
+[ Stage3 ] Code compiled and bundled successfully.
+[ Stage4 ] Target platform: playground
+[ Stage4 ] Package bundled successfully
+[ Stage4 ] Package uploaded successfully

@@ -113,14 +113,43 @@ public class KnifeController : MonoBehaviour
         }
         else
         {
+            
+#if UNITY_LUNA
+            // PLAYABLE AD COMPELTED
+                ResetKnivesPool();
+            PlayableAdManager.Instance.GameWon();
+#else
+            if (PlayableAdManager.Instance)
+            {
+                ResetKnivesPool();
+                PlayableAdManager.Instance.GameWon();
+            }
             // Stage Completed
-            StageManager.Instance.NextStage();
+            if (StageManager.Instance)
+                StageManager.Instance.NextStage();
+#endif
+
         }
     }
 
     public void ShootKnife()
     {
+        //if (PlayableAdManager.Instance)
+        //{
+        //    PlayableAdManager.Instance.ShootedKnife();
+        //    PlayableAdManager.Instance.HideClickUI();
 
+        //}
+#if UNITY_LUNA
+                PlayableAdManager.Instance.ShootedKnife();
+            PlayableAdManager.Instance.HideClickUI();
+#else
+        if (PlayableAdManager.Instance)
+        {
+            PlayableAdManager.Instance.ShootedKnife();
+            PlayableAdManager.Instance.HideClickUI();
+        }
+#endif
         knife.GetComponent<Knife>().Shoot();
         knife = null;
 

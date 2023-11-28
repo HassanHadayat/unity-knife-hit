@@ -5,7 +5,7 @@ public class Log : MonoBehaviour
 {
     public SpriteRenderer spriteRenderer;
     public Animator animController;
-    public SpriteRenderer[] knivesSpriteRenderers;
+    public Sprite selectedKnifeSprite;
 
     public GameObject crackedLog;
 
@@ -89,12 +89,9 @@ public class Log : MonoBehaviour
     {
         animController.applyRootMotion = true;
     }
-    public void SetKnivesSprite(Sprite sprite)
+    public void SetSelectedKnifeSprite(Sprite sprite)
     {
-        foreach (var spriteRenderer in knivesSpriteRenderers)
-        {
-            spriteRenderer.sprite = sprite;
-        }
+        selectedKnifeSprite = sprite;
     }
     public void ResetPosition()
     {
@@ -108,11 +105,16 @@ public class Log : MonoBehaviour
         isRotating = false;
         transform.rotation = Quaternion.identity;
         spriteRenderer.enabled = false;
-        Debug.Log("SP Status => " + spriteRenderer.enabled);
-        Instantiate(crackedLog, this.transform);
 
-        Invoke("DestroyLog", 1.8f);
-        //animController.Play("ExplodeAnim");
+        GameObject crackedLogGO = Instantiate(crackedLog, this.transform);
+
+        if (selectedKnifeSprite != null)
+        {
+            crackedLogGO.GetComponent<CrackedLog>().Explode(selectedKnifeSprite);
+
+        }
+
+        Invoke("DestroyLog", 1f);
     }
     public void DestroyLog()
     {

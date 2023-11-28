@@ -19,6 +19,8 @@ public class KnifeSelection : MonoBehaviour
     {
         GameManager.Instance.OnGameStartEvent += GameStarted;
         currKnifeImg.sprite = knivesList[currIndex];
+
+        knifeController.ChangeKnife(currKnifeImg.sprite);
     }
     public void GameStarted()
     {
@@ -33,6 +35,7 @@ public class KnifeSelection : MonoBehaviour
             currIndex = 0;
         }
         currKnifeImg.sprite = knivesList[currIndex];
+        knifeController.ChangeKnife(currKnifeImg.sprite);
     }
     public void OnClick_PrevKnife()
     {
@@ -42,6 +45,7 @@ public class KnifeSelection : MonoBehaviour
             currIndex = knivesList.Length - 1;
         }
         currKnifeImg.sprite = knivesList[currIndex];
+        knifeController.ChangeKnife(currKnifeImg.sprite);
     }
 
 

@@ -37,10 +37,10 @@ public class StageManager : MonoBehaviour
         if (!log)
         {
             log = Instantiate(logPrefab, logTrans);
-            //log.transform.position = logPos;
+            log.transform.position = logPos;
         }
 
-        log.GetComponent<Log>().SetKnivesSprite(knifeController.CurrKnifeSprite);
+        log.GetComponent<Log>().SetSelectedKnifeSprite(knifeController.CurrKnifeSprite);
         Invoke("LogInstantiateDelay", 0.3f);
     }
     private void LogInstantiateDelay()
@@ -52,7 +52,6 @@ public class StageManager : MonoBehaviour
     {
         // Reset Knives
         knifeController.ResetKnivesPool();
-
     }
 
     public void NextStage()
@@ -62,7 +61,7 @@ public class StageManager : MonoBehaviour
         CleanStage();
         log.GetComponent<Log>().Explode();
 
-        Invoke("SetupStage", 2.1f);
+        Invoke("SetupStage", 1.1f);
     }
     public void DestroyLog()
     {
